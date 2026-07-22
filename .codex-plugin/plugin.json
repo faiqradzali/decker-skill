@@ -1,0 +1,21 @@
+{
+  "name": "deckdock",
+  "version": "0.1.0",
+  "description": "Create and publish agent-authored HTML presentations to DeckDock.",
+  "author": {
+    "name": "DeckDock"
+  },
+  "license": "MIT",
+  "keywords": ["slides", "presentations", "html", "publishing"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "DeckDock",
+    "shortDescription": "Publish agent-made HTML slide decks.",
+    "longDescription": "Create, upload, publish, update, and share HTML slide decks through a DeckDock account.",
+    "developerName": "DeckDock",
+    "category": "Productivity",
+    "capabilities": ["Create", "Publish", "Upload"],
+    "brandColor": "#FF6038",
+    "defaultPrompt": "Create an HTML presentation and publish it to DeckDock."
+  }
+}
