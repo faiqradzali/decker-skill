@@ -1,7 +1,7 @@
 {
   "name": "decker",
-  "version": "0.2.0",
-  "description": "Connect an agent and publish HTML presentations to Decker.",
+  "version": "0.3.0",
+  "description": "Connect an agent and create or publish HTML presentations, including complete educational lecture decks, to Decker.",
   "author": {
     "name": "Decker"
   },
@@ -11,10 +11,10 @@
   "interface": {
     "displayName": "Decker",
     "shortDescription": "Publish agent-made HTML slide decks.",
-    "longDescription": "Securely connect an agent, then create, upload, publish, update, and share HTML slide decks through Decker.",
+    "longDescription": "Securely connect an agent, then create, upload, publish, update, and share HTML slide decks—including structured educational lectures—through Decker.",
     "developerName": "Decker",
     "category": "Productivity",
-    "capabilities": ["Connect", "Create", "Publish", "Upload"],
+    "capabilities": ["Connect", "Create", "Lecture", "Publish", "Upload"],
     "brandColor": "#FF6038",
     "defaultPrompt": "Connect to Decker, create an HTML presentation, and publish it."
   }

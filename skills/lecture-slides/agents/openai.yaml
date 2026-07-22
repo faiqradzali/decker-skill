@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lecture Slides"
+  short_description: "Create practical educational lecture decks."
+  default_prompt: "Use $lecture-slides to create and publish a complete educational lecture deck in Decker HTML format."

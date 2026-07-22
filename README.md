@@ -5,6 +5,7 @@ Publish agent-authored HTML presentations to Decker from Codex or another agent 
 ## What it teaches your agent
 
 - The Decker HTML slide contract
+- Complete educational lecture design and learning progression
 - Presenter-note formatting
 - Image upload and deck publishing endpoints
 - A browser device-authorization flow that the agent runs itself
