@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decker"
+  short_description: "Publish agent-made HTML slide decks."
+  default_prompt: "Use $decker to create and publish an HTML presentation."

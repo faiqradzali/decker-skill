@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decker Setup"
+  short_description: "Securely connect an agent to Decker."
+  default_prompt: "Use $decker-setup to connect this project to my Decker account."

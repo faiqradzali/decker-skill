@@ -1,4 +1,0 @@
-interface:
-  display_name: "DeckDock"
-  short_description: "Publish agent-made HTML slide decks."
-  default_prompt: "Use $deckdock to create and publish an HTML presentation."
