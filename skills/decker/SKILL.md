@@ -26,7 +26,9 @@ Create slide decks as an HTML fragment. Each slide must be one top-level element
 - If you add transitions, `.slide.active` must still render visibly without JavaScript.
 - Use absolute image URLs. Upload local images to `/api/images` first.
 - Do not include navigation; Decker supplies it.
-- Scripts are allowed, but the public player runs the deck in a sandboxed iframe.
+- JavaScript, animation libraries, inline event handlers, and interactive components are allowed. Published versions run on immutable, cookieless content origins that are isolated from the Decker application and API.
+- Do not put credentials, API keys, edit tokens, or private data in deck HTML or JavaScript. Published deck source is public to anyone with its content URL.
+- Decker's Quick Fix editor intentionally disables deck scripts. Test JavaScript behavior through the returned `share_url` or `present_url`.
 
 Before publishing, verify that the fragment contains at least one literal `<section class="slide">` and that adding `active` to a slide makes its content visible immediately.
 
@@ -37,10 +39,12 @@ Use `DECKER_URL` (default `https://decker.site`) and `DECKER_API_KEY`, then send
 Never print the API key or commit it to source control.
 
 - `POST /api/decks` with `{title, slug, description, html, listed}`
+- `GET /api/decks` to list the connected account's decks
 - `PUT /api/decks/{id}` with any fields to change
 - `GET /api/decks/{id}` to fetch the source and metadata
 - `DELETE /api/decks/{id}` to remove a deck
 - `POST /api/images` as multipart form-data with field `file`
+- `POST /api/images/from-url` with `{url, filename}` to copy a public HTTPS image
 
 After `POST /api/decks` or `PUT /api/decks/{id}`, inspect `markup_warnings`. If it is non-empty, apply every `agent_action` whose `auto_fixed` value is `false`, update the HTML, and retry. A `422` response contains `detail.issues`; fix every issue using its `agent_action` and retry. Do not report the deck as complete while unresolved warnings or validation issues remain.
 

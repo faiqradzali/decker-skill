@@ -10,6 +10,7 @@ Publish agent-authored HTML presentations to Decker from Codex or another agent 
 - Image upload and deck publishing endpoints
 - A browser device-authorization flow that the agent runs itself
 - Safe handling of agent credentials and private edit links
+- Isolated publishing for JavaScript-powered and animated decks
 
 ## Codex
 
